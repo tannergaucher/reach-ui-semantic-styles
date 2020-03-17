@@ -1,10 +1,115 @@
 import { Layout, SEO } from "../components"
 
-export default ({ children }) => (
-  <Layout>
-    <SEO title="Home" />
-    <div className="page padding">{children}</div>
-  </Layout>
-)
+import {
+  Accordion,
+  AlertDialog,
+  Combobox,
+  Dialog,
+  MenuButton,
+  Slider,
+  Tabs,
+  Tooltip,
+} from "../examples"
 
-# Accordion
+import { useSiteMetadata } from "../hooks"
+
+export default ({ children }) => {
+  const { title } = useSiteMetadata()
+  return (
+    <Layout>
+      <SEO title={`Home | ${title}`} />
+      <div className="page padding">
+        <div className="aside-content-grid">
+          <aside className="aside">
+            <nav
+              className="nav"
+              style={{ display: `flex`, flexDirection: `column` }}
+            >
+              <a className="nav-link" href="#accordion">
+                <h4>Accordion</h4>
+              </a>
+              <a className="nav-link" href="#alert-dialog">
+                <h4>Alert Dialog</h4>
+              </a>
+              <a className="nav-link" href="#combobox">
+                <h4>Combobox</h4>
+              </a>
+              <a className="nav-link" href="#dialog">
+                <h4>Dialog</h4>
+              </a>
+              <a className="nav-link" href="#menu-button">
+                <h4>Menu Button</h4>
+              </a>
+              <a className="nav-link" href="#slider">
+                <h4>Slider</h4>
+              </a>
+              <a className="nav-link" href="#tabs">
+                <h4>Tabs</h4>
+              </a>
+              <a className="nav-link" href="#tooltip">
+                <h4>Tooltip</h4>
+              </a>
+            </nav>
+          </aside>
+          <div className="content">{children}</div>
+        </div>
+      </div>
+    </Layout>
+  )
+}
+
+<h2 id="accordion" className="title scroll-margin-top">
+  Accordion
+</h2>
+<Accordion />
+
+---
+
+<h2 id="alert-dialog" className="title scroll-margin-top">
+  Alert Dialog
+</h2>
+<AlertDialog />
+
+---
+
+<h2 id="combobox" className="title scroll-margin-top">
+  Combobox
+</h2>
+<Combobox />
+
+---
+
+<h2 id="dialog" className="title scroll-margin-top">
+  Dialog
+</h2>
+<Dialog />
+
+---
+
+<h2 id="menu-button" className="title scroll-margin-top">
+  Menu Button
+</h2>
+<MenuButton />
+
+---
+
+<h2 id="slider" className="title scroll-margin-top">
+  Slider
+</h2>
+<Slider />
+
+---
+
+<h2 id="tabs" className="title scroll-margin-top">
+  Tabs
+</h2>
+<Tabs />
+
+---
+
+<h2 id="tooltip" className="title scroll-margin-top">
+  Tooltip
+</h2>
+<Tooltip />
+
+---

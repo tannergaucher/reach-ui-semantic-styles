@@ -14,7 +14,7 @@ export default function DialogExample() {
         Open Dialog
       </button>
       <Dialog isOpen={showDialog} onDismiss={close} aria-label="test">
-        <button className="btn" onClick={close} style={{ border: `none` }}>
+        <button className="btn btn-primary" onClick={close}>
           <span aria-hidden>×</span>
         </button>
         <h1>Hello There</h1>

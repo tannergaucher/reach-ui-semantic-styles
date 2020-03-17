@@ -245,14 +245,14 @@ blockquote > p {
   font-style: italic;
 }
 
-blockquote > h1,
+/* blockquote > h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   margin-top: 0;
-}
+} */
 
 code {
   font-family: var(--mono);
@@ -551,9 +551,7 @@ input[data-reach-combobox-input] {
   display: flex;
   flex-direction: column;
   position: sticky;
-  top: var(--space-md);
   height: 100vh;
-  margin-top: var(--space-xl);
 }
 
 @media (max-width: 600px) {
@@ -574,9 +572,9 @@ input[data-reach-combobox-input] {
   }
 
   .aside {
-    margin-top: var(--space-md);
     height: 100%;
     position: initial;
+    margin-bottom: var(--space-lg);
   }
 }
 
@@ -641,12 +639,14 @@ button[data-reach-accordion-button] {
   border-radius: 0;
   border: none;
   border-bottom: var(--thickness) solid var(--accent-1);
-  font-size: var(--text-xl);
-  margin-bottom: 0;
+  font-size: var(--text-lg);
+  margin: 0;
+  padding: var(--space-sm) 0;
+  text-transform: none;
 }
 
 button[data-reach-accordion-button][aria-expanded="true"] {
-  color: var(--text-color);
+  color: var(--grey);
   border-color: var(--bg-1);
 }
 
@@ -765,6 +765,7 @@ div[data-reach-slider-track-highlight] {
 
 div[data-reach-slider-handle] {
   border: 2px solid var(--accent-2);
+  z-index: 0;
 }
 
 /* TABS */
