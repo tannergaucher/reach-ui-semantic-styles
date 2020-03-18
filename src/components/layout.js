@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
       </header>
       <main className="main">{children}</main>
       <footer className="footer padding">
-        <h2 className="title">{title}</h2>
+        <h4 className="title">{title}</h4>
       </footer>
     </>
   )

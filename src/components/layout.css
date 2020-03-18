@@ -627,7 +627,6 @@ input[data-reach-combobox-input] {
 
 div[data-reach-accordion-panel] {
   padding: var(--space-sm);
-
   border-radius: var(--radius);
   margin: var(--space-sm) 0;
 }
@@ -641,12 +640,14 @@ button[data-reach-accordion-button] {
   border-bottom: var(--thickness) solid var(--accent-1);
   font-size: var(--text-lg);
   margin: 0;
-  padding: var(--space-sm) 0;
+  padding: var(--space-sm) var(--space-md);
   text-transform: none;
+  background: var(--bg-2);
+  color: var(--grey);
 }
 
 button[data-reach-accordion-button][aria-expanded="true"] {
-  color: var(--grey);
+  color: var(--href-hover-color);
   border-color: var(--bg-1);
 }
 
@@ -786,6 +787,7 @@ button[data-reach-tab]:hover {
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
   border-bottom-color: var(--bg-2);
+  color: var(--href-hover-color);
 }
 
 button[data-reach-tab][data-selected] {
@@ -794,7 +796,7 @@ button[data-reach-tab][data-selected] {
   border-bottom-color: var(--accent-1);
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
-  box-shadow: var(--elevation-1);
+  box-shadow: var(--elevation-2);
   filter: opacity(1);
   color: var(--text-color);
 }
