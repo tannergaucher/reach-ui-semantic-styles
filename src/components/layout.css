@@ -649,7 +649,7 @@ button[data-reach-accordion-button] {
 button[data-reach-accordion-button][aria-expanded="true"] {
   color: var(--text-color);
   border-color: var(--bg-1);
-  border-bottom-color: var(--bg-2);
+  border-bottom-color: var(--text-color);
 }
 
 /* ALERT DIALOG */
