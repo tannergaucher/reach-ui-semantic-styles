@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Reach UI X Semantic Styles`,
+    title: `Semantic Styles X Reach UI`,
     description: ``,
     author: `@gatsbyjs`,
   },
