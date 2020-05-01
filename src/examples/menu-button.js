@@ -12,7 +12,7 @@ import "@reach/menu-button/styles.css"
 export default function MenuButtonExample() {
   return (
     <Menu>
-      <MenuButton>
+      <MenuButton className="btn">
         Actions <span aria-hidden>▾</span>
       </MenuButton>
       <MenuList>

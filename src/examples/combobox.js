@@ -12,7 +12,11 @@ import "@reach/combobox/styles.css"
 export default function ComboboxExample() {
   return (
     <Combobox>
-      <ComboboxInput aria-labelledby="demo" placeholder="Froogle" />
+      <ComboboxInput
+        className="input"
+        aria-labelledby="demo"
+        placeholder="Froogle"
+      />
       <ComboboxPopover>
         <ComboboxList aria-labelledby="demo">
           <ComboboxOption value="Apple" />

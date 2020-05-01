@@ -1,6 +1,8 @@
 import React from "react"
 
-import "./layout.css"
+import "semantic-styles"
+import "@semantic-styles/reach-ui"
+import "./local.css"
 
 import { useSiteMetadata } from "../hooks"
 
